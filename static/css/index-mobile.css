@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Montserrat:wght@500;700&family=Nunito&display=swap');
+
 *{
     border: 0;
     margin: 0;
@@ -10,8 +11,10 @@ html, body, main {
     height: auto;
 }
 
-.header{
-    
+.header {
+    width: 100%;
+    position: absolute;
+    border: 1px solid rgb(255, 0, 0);
 }
 
 .main{
@@ -20,6 +23,7 @@ html, body, main {
 
 .title{
     width: 100%;
+    padding-top: 2.5em;
     position: absolute;
     font-weight: 700;
     font-size: 28px;
@@ -31,35 +35,118 @@ html, body, main {
 }
 
 .logo1{
-    
     position: absolute;
-    margin-left:14.5em;
-    margin-top: 9.5em;
+    margin-left: 14.7em;
+    margin-top: 8em;
     z-index: 2;
 }
 
 .blue{
     position: absolute;
+    margin-top: -1.2em;
     z-index: 1;
 }
 
+.lightblue {
+    position: absolute;
+    z-index: -1;
+}
 .img1-resize{
     width: 100%;
     height: auto;
 }
 
-.lightblue {
-    position: relative;
-    z-index: -1;
-}
 
 .login{
-    border: 2px solid #ff0505;
+    width: 100%;
     position: relative;
+    
+    z-index: 5;
 }
 .title2 {
-    padding-top: 4em;
-    border: 2px solid #4400ff;
+    font-weight: 900;
     font-size: 36px;
     line-height: 44px;
+    margin-left: 1em;
+    margin-bottom: 1em;
+}
+
+.fontLexend{
+    font-family: Lexend Deca;
+}
+
+.fields{
+    display:flex;
+    margin-left:3em;
+    margin-bottom: .5em;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.input{
+    width: 80%;
+    height: 40px;
+    margin-bottom: 1.5em;
+    margin-left:2.5em;
+    position: relative;
+    border: 1px solid #2F80ED;
+    border-radius: 10px;
+}
+
+.btn-login{
+    width: 144px;
+    height: 60px;
+    font-size: 24px;
+    line-height: 30px;
+    border: 1px solid #000000;
+    justify-content: center;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.015em;
+}
+
+.password{
+    position: relative;
+    display: flex;
+    width: 13em;
+    font-size: 12px;
+    padding-left: 1.5em;
+
+}
+
+.bottom-content{
+    display: flex;
+    flex-direction: row;
+    margin-left:2.5em;
+}
+
+.footer{
+    width: 100%;
+    position: relative;
+}
+
+
+.bluefoot{
+    position: absolute;
+    
+}
+
+.signin{
+    width: 100%;
+    font-family:Nunito;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin:-4em 0 0 1em;
+}
+
+.socialmedia{
+    margin: -5em 0 0 2em;
+    position: relative;
+    padding:.5em;
+    
 }
