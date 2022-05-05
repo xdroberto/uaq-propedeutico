@@ -20,7 +20,7 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+    margin:0 0 1em 0;
 }
 
 .title {
@@ -35,14 +35,83 @@ img {
 
 .logo1, .user{
     display: flex;
-    width: 10%;
+    width: 11%;
 }
 
 .logo1{
-    margin: 0 0 0 1.5em;
+    margin: 0 0 0 1em;
 }
 
 .user{
     margin: 0 1.5em 0 0;
     
 }
+
+.group >h2, h3 {
+    border:solid 1px #000;
+    font-weight: 800;
+    letter-spacing: 1px;
+    display: flex;
+    justify-content: center;
+}
+
+.table-status {
+    border:solid;
+    display: flex;
+    justify-content: center;
+}
+
+div.unstyledTable {
+    justify-content:space-around;
+    text-align: center;
+    
+  }
+  .divTable.unstyledTable .divTableCell, .divTable.unstyledTable .divTableHead {
+    border: 1px solid #E2E4E5;
+  }
+  .divTable.unstyledTable .divTableRow:nth-child(even) {
+    background: #E2E4E5;
+  }
+  .divTable.unstyledTable .divTableHeading {
+    background: #DDDDDD;
+    border-bottom: 0px solid #444444;
+  }
+
+  .divTable, .unstyledTable, .divTableHeading, .divTableHead {
+    font-weight: bold;
+    text-align: center;
+  }
+  .divTable.unstyledTable .divTableHeading .divTableHead:first-child {
+    border-left: none;
+  }
+  
+/* Divtable */
+.divTable{ 
+      display: table;
+      width: 95%; 
+    }
+  .divTableRow { 
+      display: table-row;
+    }
+  .divTableHeading {
+      font-size: 18px;
+      display: table-header-group;
+    }
+  .divTableCell, .divTableHead {
+      display: table-cell;
+    }
+
+.divTableCells{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #00B312;
+}
+
+  .divTableHeading {
+      display: table-header-group;
+
+    }
+  .divTableBody {
+      display: table-row-group;
+    }
