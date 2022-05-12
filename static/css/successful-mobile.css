@@ -45,6 +45,8 @@ img{
 
 .img1 {
     width: 80%;
+    display: flex;
+    justify-content: center;
 }
 
 .info {
