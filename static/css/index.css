@@ -4,7 +4,7 @@
 
 }
 
-@media(min-width: 1300px){
+@media(min-width: 1024px){
     .backgroundHeader{
         background-color:   transparent;
     }
@@ -15,31 +15,37 @@
     }
     .title{
         position: relative;
-        background: #0C1A3D;
+        box-sizing: border-box;
+        padding: 0px 50px;
         width:70%;
-        height:68%;
-        margin-top:1%;
+        height:11vw;
         display: flex;
         
     }
     .logo1{
-        position: relative;
-        width: 36%;
-        justify-content: end;        
+        background: #0C1A3D;
+        position: absolute;
+        top: calc(50% - 7.5vw);
         margin-top:2.9%;
         display:flex;
-    }
+        z-index: -1;
+        width:70%;
+        height:11vw;
+        right: 0;
 
+    }
+    
     .logo1 > img{
-        width: 31%;
-        object-fit: cover;
+        position: absolute;
+        left: -5vw;
+        width: 11vw;
+        height: 100%;
     }
 
     .title > h1{
         text-transform: uppercase;
-        font-size: 64px;
+        font-size: 2.8em;
         position: relative;
-        margin:0 0 0 2em;
         display: flex;
         justify-content: center;
         align-items:center;
