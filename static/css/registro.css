@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Montserrat:wght@500;700&family=Nunito&display=swap');
+
+*{
+    font-family:Montserrat !important; 
+
+}
+
+.w-45{
+    width:45% !important;
+}
+
+@media (max-width: 767.98px) {
+
+    .w-45{
+        width:100% !important;
+    } 
+}
+
+.none{display: none !important;}
+.hidden{display: hidden;}
+.input__form-error {
+    background-color:red;
+    color:white;
+    display: block;
+    animation: show-message 1s 1 normal 0s ease both;
+}
+.is_active{
+    display: block;
+    animation: show-message 1s 1 normal 0s ease both;
+}
+
+@keyframes show-message {
+    0%{
+        visibility: hidden;
+        opacity: 0;
+    }
+    100%{
+        visibility: visible;
+        opacity: 1;
+    }
+}
+

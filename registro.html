@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap-5.2.0-beta1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/css/registro.css">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <div class="container">
+        <div class="row ">
+        <div class="col- w-75 mx-auto">
+                <h1 class="fw-bold">Información del perfil</h1>   
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis imperdiet mauris. </p>  
+            <hr></hr>
+
+            <h3 class="fw-bold">Datos personales</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <form class="border rounded p-2 d-flex flex-wrap justify-content-between" id="formulario">
+                <div class="name w-100">
+                    <label for="name" class="form-label">Nombre de usuario</label>
+                        <input type="text" class="form-control" id="name" aria-describedby="emailHelp" title="Ingresa un nombre valido" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required name="nombre">
+                </div>
+                <div class="address w-100">
+                    <label for="address" class="form-label">Domicilio</label>
+                        <input type="text" class="form-control" id="address" aria-describedby="emailHelp" name="domicilio" required>
+                </div>
+                <div class="birth w-45 ">
+                    <label for="birth" class="form-label">Fecha de nacimiento</label>
+                        <input type="date" class="form-control" id="birth" aria-describedby="emailHelp" name="nacimiento" required>
+                </div>
+                <div class="phone w-45 ">
+                    <label for="phone" class="form-label">Teléfono</label>
+                        <input type="tel" class="form-control" id="phone" aria-describedby="emailHelp" title="Ingresa un dato valido" minlength="10" maxlength="10" pattern="^[0-9]{10}$" name="telefono" required>
+                </div>
+                <div class="mail w-45 ">
+                    <label for="mail" class="form-label">Correo electrónico</label>
+                        <input type="mail" class="form-control" id="mail" name="correo" aria-describedby="emailHelp" title="Ingresa un email valido" pattern="^[a-zA-Z0-9.!#$%&'+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)$" required>
+                </div>
+                <div class="plan w-45 ">
+                    <label for="plan" class="form-label">Plan de estudios</label>
+                        <select type="text" class="form-control" id="plan" name="carrera" aria-describedby="emailHelp" required>
+                            <option value="Carrea 1">Carrera 1</option>
+                            <option value="Carrea 2">Carrera 2</option>
+                            <option value="Carrea 3">Carrera 3</option>
+                            <option value="Carrea 4">Carrera 4</option>
+                            <option value="Carrea 5">Carrera 5</option>
+                        </select>
+                </div>
+                <div class="school w-100">
+                    <label for="school" class="form-label">Escuela de procedencia</label>
+                        <input type="text" class="form-control" id="school" name="escuela" aria-describedby="emailHelp" title="Ingresa un nombre valido" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
+                </div>
+
+                <h3 class="fw-bold">Recibo de pago</h3>
+                <p class="w-100">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+                <input type="file" class="form-control" id="inputGroupFile02" name="recibo" required>
+
+                
+                <button type="submit" class="btn btn-outline-dark mt-4">Siguiente 🠖</button>
+            </form>
+            </div>
+        </div>
+
+
+    </div>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="static/js/index.js" type="module"></script>
+    <script src="./bootstrap-5.2.0-beta1-dist/js/bootstrap.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    </body>
+</html>
