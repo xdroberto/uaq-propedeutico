@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FI</title>
     <link rel="stylesheet" href="static/css/maestros.css">
+    <link rel="stylesheet" href="bootstrap-5.2.0-beta1-dist/css/bootstrap.css">
 </head>
 <body>
      <img src="static/images/logo.png" alt="">
@@ -21,67 +22,76 @@
                 </a>
             </section>
 
-            <section class="inputsup">
-                <div class="grupo">
-                        <label for="cars">Grupo: </label>
-                            <div class="content-select">
-                                <select id="cars" name="cars">
-                                  <option value="volvo">1</option>
-                                  <option value="saab">2</option>
-                                  <option value="fiat">3</option>
-                                  <option value="audi">4</option>
-                                  <option value="volvo">5</option>
-                                  <option value="saab">6</option>
-                                  <option value="fiat">7</option>
-                                  <option   value="audi">8</option>
-                                  <option value="fiat">9</option>
-                                  <option value="audi">10</option>
-                                </select>
-                            </div>
-                </div>   
-                
-                <div class="periodo">
-                        <label for="cars">Periodo: </label>
-                            <div class="content-select">
-                                <select id="cars" name="cars">
-                                <option value="volvo">1</option>
-                                <option value="saab">2</option>
-                                <option value="fiat">3</option>
-                                <option value="audi">4</option>
-                                <option value="volvo">5</option>
-                                <option value="saab">6</option>
-                                <option value="fiat">7</option>
-                                <option value="audi">8</option>
-                                <option value="fiat">9</option>
-                                <option value="audi">10</option>
-                                </select>
-                            </div>
-                </div>      
-            </section>
-            <section class="inputsbottom">
-                <div class="materia">
-                        <label for="cars">Materia: </label>
-                            <div class="content-select">
+            <section>
+                <div class="row">
+                        <div class="col-md-12">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="dropdown-center ">
+                                        <label>Grupo</label>
+                                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownCenterBtn" data-bs-toggle="dropdown" aria-expanded="false"> 
+                                             SeleccionaaAA  
+                                        </button>  
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownCenterBtn">  
+                                            <li><a class="dropdown-item" href="#">1</a></li>  
+                                            
+                                            <li>
+                                                <a class="dropdown-item" href="#">2</a>
+                                            </li>  
+                                            <li>
+                                                <a class="dropdown-item" href="#">3</a>
+                                            </li>  
+                                        </ul> 
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="dropdown-center ">
+                                        <label>Periodo</label>
+                                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"> 
+                                             Seleccionar  
+                                        </button>  
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">  
+                                            <li>
+                                                <a class="dropdown-item" href="#">1</a>
+                                            </li>  
+                                            
+                                            <li>
+                                                <a class="dropdown-item" href="#">2</a>
+                                            </li>  
+                                            <li>
+                                                <a class="dropdown-item" href="#">3</a>
+                                            </li>  
+                                        </ul> 
+                                    </div>
+                                    </div>
+                                </div>
 
-                                <select id="cars" name="cars">
-                                  <option value="volvo">1</option>
-                                  <option value="saab">2</option>
-                                  <option value="fiat">3</option>
-                                  <option value="audi">4</option>
-                                  <option value="volvo">5</option>
-                                  <option value="saab">6</option>
-                                  <option value="fiat">7</option>
-                                  <option value="audi">8</option>
-                                  <option value="fiat">9</option>
-                                  <option value="audi">10</option>
-                                </select>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="dropdown-center ">
+                                        <label>Materia</label>
+                                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"> 
+                                             Seleccionar  
+                                        </button>  
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">  
+                                            <li>
+                                                <a class="dropdown-item" href="#">1</a>
+                                            </li>  
+                                            
+                                            <li>
+                                                <a class="dropdown-item" href="#">2</a>
+                                            </li>  
+                                            <li>
+                                                <a class="dropdown-item" href="#">3</a>
+                                            </li>  
+                                        </ul> 
+                                    </div>
+        
+                                </div>
                             </div>
-                        
-                </div>
-                
-                <div>
-                    <div class="btn-login fontLexend">Consultar</div>
-                </div>
+
+                        </div>
+                    </div>
             </section>
 
             <section class="table">
@@ -204,5 +214,6 @@
 
             </section>
         </main>
+        <script src="js/bootstrap.bundle.js"></script>
 </body>
 </html>

@@ -14,13 +14,11 @@ function enviar() {
             URL:"http://localhost:3000/user/signin",
             data: dataForms
         })
-
         .then((resp) => {
-            console.log(resp.data)
+            console.log(resp.data.code)
         })
-
         .catch((error) => {
-            console.log(error.data)
+            console.log(error)
         })
     })
 }

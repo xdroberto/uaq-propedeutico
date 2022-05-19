@@ -5,6 +5,14 @@
 
 }
 
+.title {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 1px;
+    color: #000;
+}
+
 .w-45{
     width:45% !important;
 }
@@ -40,3 +48,90 @@
     }
 }
 
+.img{
+    width:120% !important;
+    padding:0;
+    height:50%;
+}
+
+.imgl{
+    width: 3rem;
+    height: 3rem;  
+}
+
+
+.variants {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .variants > div {
+    margin-right: 5px;
+  }
+  
+  .variants > div:last-of-type {
+    margin-right: 0;
+  }
+  
+  .file {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .file > input[type='file'] {
+    display: none
+  }
+  
+  .file > label {
+    font-size: 1rem;
+    font-weight: 300;
+    cursor: pointer;
+    outline: 0;
+    user-select: none;
+    border-color: rgb(216, 216, 216) rgb(209, 209, 209) rgb(186, 186, 186);
+    border-style: solid;
+    border-radius: 4px;
+    border-width: 1px;
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(0, 0%, 29%);
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .file > label:hover {
+    border-color: hsl(0, 0%, 21%);
+  }
+  
+  .file > label:active {
+    background-color: hsl(0, 0%, 96%);
+  }
+  
+  .file > label > i {
+    padding-right: 5px;
+  }
+  
+  .file--upload > label {
+    color: #006C9D;
+  }
+  
+  .file--upload > label:hover {
+    border: 1px dashed #006C9D;
+    border-radius: 5px;
+  }
+  
+  .file--upload > label:active {
+    background-color: hsl(204, 86%, 91%);
+  }
+
+  .upld{
+    width:50% ;
+    height:auto;
+  }

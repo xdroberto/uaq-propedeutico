@@ -79,12 +79,23 @@ img {
    
 }
 
+.btn{
+    border: none !important;
+    background: rgba(0, 0, 0, 0) !important;
+    color: #000 !important;
+
+}
+
+.dropdown-center{
+    border:solid;
+    width: auto;
+    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+}
+
 
 /*----------------------------------------------------------------*/ 
 
-.aux{
-    padding-left:2vw;
-}
 
 .content-input input,
 .content-select select{
@@ -107,8 +118,8 @@ img {
     width: 75%;
 }
 label{
-    width: 25%;
-    font-size:0.9em;
+    font-weight: bold;
+
 }
 .content-select select{
     box-shadow: 4px 4px 5px 1px rgba(0, 0, 0, 0.1);
@@ -123,29 +134,6 @@ label{
     position: relative;
     transition: all 0.25s ease;
 }
-
-/* 
-Creamos la fecha que aparece a la izquierda del select.
-Realmente este elemento es un cuadrado que sólo tienen
-dos bordes con color y que giramos con transform: rotate(-45deg);
-*/
-.content-select i{
-    position: absolute;
-	right: 20px;
-	top: calc(50% - 13px);
-	height: 16px;
-	display: block;
-	border-left:1.5px solid #000;
-	border-bottom:1.5px solid #000;
-	transform: rotate(-45deg); /* Giramos el cuadrado */
-	transition: all 0.25s ease;
-}
-
-.content-select:hover i{
-	margin-top: 3px;
-}
-
-/*----------------------------------------------------------------*/
 
 .btn-login{
     cursor: pointer;
@@ -173,14 +161,12 @@ dos bordes con color y que giramos con transform: rotate(-45deg);
 table{
     
     width: 97%;
-    border-collapse: collapse;
     border-radius: 6px;
     box-shadow: 3px 3px 5px -3px gray;
 }
 
 table, td, th{
     border: 1px solid #000;
-    border-collapse: collapse;
     padding: 10px 10px;
     box-shadow: 3px 3px 5px -3px gray;
 
@@ -196,3 +182,12 @@ label{
     margin: 0;
     padding: 0;
 }
+
+
+
+select{
+    background-color: gray;
+
+}
+
+

@@ -9,11 +9,19 @@
     <link rel="stylesheet" href="bootstrap-5.2.0-beta1-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="static/css/registro.css">
 
-    <title>Hello, world!</title>
+    <title>FIF</title>
   </head>
-  <body>
-    <div class="container">
-        <div class="row ">
+  <body class="overflow-x-hidden">
+    <div class="container-fluid d-flex flex-column justify-content-between">
+        <div class="row p-3">
+            <div class="col justify-content-between d-flex"> 
+                <div class="d-flex">
+                    <img class="imgl" src="static/images/fif1.png" alt="">
+                    <p class="my-auto ms-2 title">FACULTAD DE INFORMÁTICA</p>
+                </div>
+            </div>
+        </div>
+        <div class="row mb-5">
         <div class="col- w-75 mx-auto">
                 <h1 class="fw-bold">Información del perfil</h1>   
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis imperdiet mauris. </p>  
@@ -54,24 +62,33 @@
                 </div>
                 <div class="school w-100">
                     <label for="school" class="form-label">Escuela de procedencia</label>
-                        <input type="text" class="form-control" id="school" name="escuela" aria-describedby="emailHelp" title="Ingresa un nombre valido" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
+                        <input type="text" class="form-control" id="school" name="es cuela" aria-describedby="emailHelp" title="Ingresa un nombre valido" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
                 </div>
 
                 <h3 class="fw-bold">Recibo de pago</h3>
                 <p class="w-100">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 
-                <input type="file" class="form-control" id="inputGroupFile02" name="recibo" required>
-
+                <div class="variants w-100 ">
+    
+                    <div class='file file--upload mx-auto '>
+                      <label class=" d-flex flex-column " for='input-file'>
+                        <i class="material-icons d-flex justify-content-center">
+                            <img class="upld " src="https://img.icons8.com/pastel-glyph/64/000000/upload--v1.png"/>
+                        </i>Subir archivo
+                      </label>
+                      <input id='input-file' type='file' />
+                    </div>
+                </div>
                 
-                <button type="submit" class="btn btn-outline-dark mt-4">Siguiente 🠖</button>
+                <button type="submit" class="btn btn-outline-dark">Siguiente 🠖</button>
             </form>
             </div>
+        </div>    
+        <div class="row vw-110 fixed-bottom">
+             <img src="static/images/footer_alumno.svg">
         </div>
-
-
     </div>
 
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="static/js/index.js" type="module"></script>
     <script src="./bootstrap-5.2.0-beta1-dist/js/bootstrap.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
