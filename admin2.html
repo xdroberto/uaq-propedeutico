@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FI</title>
+    <link rel="stylesheet" href="static/css/admin.css">
+    <link rel="stylesheet" href="bootstrap-5.2.0-beta1-dist/css/bootstrap.css">
+</head>
+<body>
+        <main>
+
+            <div class="container-fluid">
+
+                <div class="row border center ">
+                        <div class="col justify-content-between d-flex"> 
+                            <div class="d-flex">
+                                <img class="imgl my-auto" src="static/images/fif1.png" alt="">
+                                <p class="my-auto ms-2">FACULTAD DE INFORMÁTICA</p>
+                            </div>
+                            <div class="d-flex">
+                                <p class="my-auto me-1">Usuario: Lorem Ipsum</p>
+                                <img class="imgl my-auto" src="static/images/profile-user.png" alt=""/>
+                            </div>
+                    
+                        </div>
+                </div>
+
+                <div class="row ach">
+
+                    <div class="col d-flex col-6 justify-content-arround p-5">
+                        <label class="fw-bold my-auto me-5" for="p">Periodo</label>
+                        <select class="form-select w-75 h-25 my-auto" id="p" aria-label="Default select example">
+                            <option selected>Open this select menu</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                    </div>
+
+                    
+
+                    <div class="col d-flex col-6 justify-content-arround p-5">
+                        <button class="btn btn-outline-dark h-25 my-auto">Consultar </button>
+                    </div>
+                </div>
+
+                <div class="row p-5">
+                    <table class="border-dark table-bordered col-11 mx-auto text-center radius">
+                        <tr class="bg-dark text-white">
+                            <th class="fs-3">Alumno</th>
+                            <th class="fs-3">Grupo</th>
+                        </tr>
+                        <tr>
+                            <th>Roberto Becerril Hurtado</th>
+                            <th class="py-4">
+                                <select class="form-select w-50 mx-auto shadow border-dark" id="gp" aria-label="Default select example">
+                                    <option selected></option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                  </select>
+                            </th>
+                        </tr>
+                        
+                    </table>
+                    <div class="col-11 mx-auto pe-0">
+                        <button type="submit" class="btn btn-outline-dark float-end mt-5">Guardar</button>
+                    </div>
+                </div>
+
+
+
+                <div class="row fixed-bottom">
+                    <img src="static/images/footer_admin.svg">
+               </div>
+
+
+            </div>    
+        </main>
+        <script src="bootstrap-5.2.0-beta1-dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>

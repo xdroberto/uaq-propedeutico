@@ -59,4 +59,9 @@
     .table-status, .group{
         width: 50%;
     }
+
+    .imgl{
+        width: 3rem;
+        height: 3rem;  
+    }
 }

@@ -5,138 +5,163 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FI</title>
-    <link rel="stylesheet" href="static/css/maestros.css">
+    <link rel="stylesheet" href="static/css/admin.css">
+    <link rel="stylesheet" href="bootstrap-5.2.0-beta1-dist/css/bootstrap.css">
 </head>
 <body>
-     <img src="static/images/logo.png" alt="">
         <main>
-            <section class="up_bar">
-                <div class="logo1">
-                    <img src="static/images/fif1.png" alt="">
+
+            <div class="container-fluid">
+
+                <div class="row border center ">
+                        <div class="col justify-content-between d-flex"> 
+                            <div class="d-flex">
+                                <img class="imgl my-auto" src="static/images/fif1.png" alt="">
+                                <p class="my-auto ms-2">FACULTAD DE INFORMÁTICA</p>
+                            </div>
+                            <div class="d-flex">
+                                <p class="my-auto me-1">Usuario: Lorem Ipsum</p>
+                                <img class="imgl my-auto" src="static/images/profile-user.png" alt=""/>
+                            </div>
+                    
+                        </div>
                 </div>
-                <p class="title">FACULTAD DE INFORMÁTICA</p>
-                <p class="title usr">USUARIO: LOREM IPSUM</p>
-                <a class="user" href="#">
-                    <img src="static/images/profile-user.png" alt=""/>
-                </a>
-            </section>
 
-            <section class="inputsup">
+                <div class="row">
+                    
+                    <div class="col d-flex col-6 justify-content-arround p-5">
+                        <label class="fw-bold my-auto me-5" for="gp">Grupo</label>
+                        <select class="form-select w-75 " id="gp" aria-label="Default select example">
+                            <option selected>Open this select menu</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                    </div>
 
-                <div class="grupo">
-                    <form action="#">
-                        <label for="cars">Grupo: </label>
-                            <div class="content-select">
-                                <select id="cars" name="cars">
-                                  <option value="volvo">1</option>
-                                  <option value="saab">2</option>
-                                  <option value="fiat">3</option>
-                                  <option value="audi">4</option>
-                                  <option value="volvo">5</option>
-                                  <option value="saab">6</option>
-                                  <option value="fiat">7</option>
-                                  <option value="audi">8</option>
-                                  <option value="fiat">9</option>
-                                  <option value="audi">10</option>
-                                </select>
-                            </div>
-                      </form>
-                </div>   
-                
-                <div class="periodo">
-                    <form action="#">
-                        <label for="cars">Periodo: </label>
-                            <div class="content-select">
-                                <select id="cars" name="cars">
-                                <option value="volvo">1</option>
-                                <option value="saab">2</option>
-                                <option value="fiat">3</option>
-                                <option value="audi">4</option>
-                                <option value="volvo">5</option>
-                                <option value="saab">6</option>
-                                <option value="fiat">7</option>
-                                <option value="audi">8</option>
-                                <option value="fiat">9</option>
-                                <option value="audi">10</option>
-                                </select>
-                            </div>
-                      </form>
-                </div>      
-            </section>
-            <section class="inputsbottom">
-                <div class="materia">
-                    <form action="#">
-                        <label for="cars">Materia: </label>
-                            <div class="content-select">
+                    <div class="col d-flex col-6 justify-content-arround p-5">
+                        <label class="fw-bold my-auto me-5" for="p">Periodo</label>
+                        <select class="form-select w-75 " id="p" aria-label="Default select example">
+                            <option selected>Open this select menu</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                    </div>
 
-                                <select id="cars" name="cars">
-                                  <option value="volvo">1</option>
-                                  <option value="saab">2</option>
-                                  <option value="fiat">3</option>
-                                  <option value="audi">4</option>
-                                  <option value="volvo">5</option>
-                                  <option value="saab">6</option>
-                                  <option value="fiat">7</option>
-                                  <option value="audi">8</option>
-                                  <option value="fiat">9</option>
-                                  <option value="audi">10</option>
-                                </select>
-                            </div>
+                    <div class="col d-flex col-6 justify-content-arround p-5">
+                        <label class="fw-bold my-auto me-5" for="m">Materia</label>
+                        <select class="form-select w-75 " id="m" aria-label="Default select example">
+                            <option selected>Open this select menu</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                    </div>
+
+                    <div class="col d-flex col-6 justify-content-arround p-5">
+                        <button class="btn btn-outline-dark">Consultar </button>
+                        <button class="btn btn-outline-dark ms-5 text-light bg-danger ">Grupos </button>
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    <table class="border-dark table-bordered col-11 mx-auto text-center radius">
+                        <tr class="bg-dark text-white">
+                            <th class="fs-3 " rowspan="2">Alumno</th>
+                            <th colspan="3">Calificación</th>
+                            <th colspan="3">Faltas</th>
+                            <th class="fs-3" rowspan="2">Pago</th>
+                            <th class="fs-3 p-3" rowspan="2">Validar</th>
+                        </tr>
+                        <tr class="bg-dark text-white">
+                            <th>Programación</th>
+                            <th>Matemáticas</th>
+                            <th>Electrónica</th>
+    
+                            <th>Programación</th>
+                            <th>Matemáticas</th>
+                            <th>Electrónica</th>
+                            
+                        </tr>
+                        <tr>
+                            <th>Roberto Becerril Hurtado</th>
+                            <th class="py-4">
+                                <select class="form-select w-50 mx-auto shadow border-dark" id="gp" aria-label="Default select example">
+                                    <option selected></option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                  </select>
+                            </th>
+                            <th class="py-4">
+                                <select class="form-select w-50 mx-auto shadow border-dark" id="gp" aria-label="Default select example">
+                                    <option selected></option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                  </select>
+                            </th>
+                            <th class="py-4">
+                                <select class="form-select w-50 mx-auto shadow border-dark" id="gp" aria-label="Default select example">
+                                    <option selected></option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                  </select>
+                            </th>
+                            <th class="py-4">
+                                <select class="form-select w-50 mx-auto shadow border-dark" id="gp" aria-label="Default select example">
+                                    <option selected></option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                  </select>
+                            </th>
+                            <th class="py-4">
+                                <select class="form-select w-50 mx-auto shadow border-dark" id="gp" aria-label="Default select example">
+                                    <option selected></option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                  </select>
+                            </th>
+                            <th class="py-4">
+                                <select class="form-select w-50 mx-auto shadow border-dark" id="gp" aria-label="Default select example">
+                                    <option selected></option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                  </select>
+                            </th>
+                            <th>
+                                <div class="mx-auto">
+                                    <a href="#">
+                                        <img class="imgl" src="static/images/pdf.png">
+                                    </a>
+                                </div>
+                                
+                            </th>
+                            
+                            <th>
+                                  <div class="form-auto form-switch">
+                                    <input class="form-check-input custom-control-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                                  </div>
+                            </th>
+                        </tr>
                         
-                      </form>
+                    </table>
+                    
                 </div>
-                
-                <div>
-                    <div class="btn-login fontLexend">Consultar</div>
-                </div>
-            </section>
 
-            <section class="table">
-                <table>
-                    <tr>
-                        <th rowspan="2">Alumno</th>
-                        <th colspan="3">Calificación</th>
-                        <th colspan="3">Faltas</th>
-                        <th rowspan="2">Pago</th>
-                        <th rowspan="2">Validar</th>
-                    </tr>
-                    <tr>
-                        <th>Programación</th>
-                        <th>Matemáticas</th>
-                        <th>Electrónica</th>
+                <div class="row vw-110 fixed-bottom">
+                    <img src="static/images/footer_admin.svg">
+               </div>
 
-                        <th>Programación</th>
-                        <th>Matemáticas</th>
-                        <th>Electrónica</th>
-                        
-                    </tr>
-                    <tr>
-                        <th>Roberto Becerril Hurtado</th>
-                        <th>10</th>
-                        <th>10</th>
-                        <th>10</th>
-                        <th>10</th>
 
-                        <th>10</th>
-                        <th>10</th>
-                        <th>10</th>
-                        <th>10</th>
-                    </tr>
-                    <tr>
-                        <th>Ale Aguilera</th>
-                        <th>2</th>
-                        <th>2</th>
-                        <th>2</th>
-
-                        <th>2</th>
-                        <th>2</th>
-                        <th>2</th>
-                        <th>2</th>
-                        <th>2</th>
-                    </tr>
-                </table>
-
-            </section>
+            </div>    
         </main>
-</body>
+        <script src="bootstrap-5.2.0-beta1-dist/js/bootstrap.bundle.min.js"></script>
+    </body>
 </html>

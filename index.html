@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FIF</title>
+    <link rel="stylesheet" href="bootstrap-5.2.0-beta1-dist/css/bootstrap.css">
     <link rel="stylesheet" href="static/css/index-mobile.css">
     <link rel="stylesheet" href="static/css/index.css">
 </head>
@@ -16,12 +17,10 @@
                     <div class="logo1">
                         <img src="static/images/fif1.png" alt="">
                     </div>
-                    <!-- <div class="blue">
-                        <img  src="static/images/blue.svg" alt="">
+
+                    <div class="row headim">
+                        <img src="static/images/header_index_mobile.svg">
                     </div>
-                    <div class="lightblue">
-                        <img  src="static/images/lightblue.svg" alt="">
-                    </div> -->
                 </div>
                 <div class="title">
                     <h1>Facultad de Informática</h1>
@@ -41,26 +40,29 @@
                         <input type="password" name="password" class="input" id="password">
                     </div>
     
-                    <div class="bottom-content">
+                    <div class="bottom-content ">
                         <div class="btn-login fontLexend">Login</div>
-                        <div class="password">Olvidaste tu contraseña?</div>
+                        <div class="password ">Olvidaste tu contraseña?</div> 
                     </div>
                 </div>
 
             </section>
 
-            <section class="footer">
-                    <img class="img1-resize" style="display: none" src="static/images/bluefoot.svg" alt="">
-                
-                    <div class="signin">
-                        <div class="socialmedia">
-                            <img target="" src="https://img.icons8.com/fluency/48/000000/instagram-new.png"/>
-                            <img src="https://img.icons8.com/color/48/000000/facebook.png"/>
-                        </div>
-                        <div class="registro">Eres nuevo? <span><b> Registrate </b></span></div>
-                    </div>
-            </section>
-            
+            <div class="row mt-4">
+                <div class="col-6 mx-auto d-flex justify-content-center align-items-center">
+                    <img target="" src="https://img.icons8.com/fluency/48/000000/instagram-new.png"/>
+                    <img src="https://img.icons8.com/color/48/000000/facebook.png"/>
+                    <a class="reset ms-2" href="registro.html">Eres nuevo? <span><b> Registrate </b></a>
+                </div>
+            </div>
+
+            <div class="row vw-110 fixed-bottom foot">
+                <img src="static/images/foot_index.svg">
+            </div>
+
+            <div class="row vw-110 fixed-bottom footi">
+                <img src="static/images/foot_index_mobile.svg">
+            </div>
         </main>
 </body>
 </html>
