@@ -1,3 +1,6 @@
+import{Request} from "../models/classrequest.js";
+const request= new Request();
+
 function enviar() {
 
     document.addEventListener('submit', e=>{
@@ -9,17 +12,9 @@ function enviar() {
         inputsdata.forEach(el => {
             dataForms={...dataForms, [el.name]: el.value};
         })
-        axios({
-            methods: "post",
-            URL:"http://localhost:3000/user/signin",
-            data: dataForms
-        })
-        .then((resp) => {
-            console.log(resp.data.code)
-        })
-        .catch((error) => {
-            console.log(error)
-        })
+
+        request.login(dataForms)
+  
     })
 }
 

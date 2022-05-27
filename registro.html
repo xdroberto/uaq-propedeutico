@@ -31,8 +31,8 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             <form class=" p-2 d-flex flex-wrap justify-content-between" id="formulario">
                 <div class="name w-100">
-                    <label for="name" class="form-label">Nombre de usuario</label>
-                        <input type="text" class="form-control" id="name" aria-describedby="emailHelp" title="Ingresa un nombre valido" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required name="nombre">
+                    <label for="name" class="form-label">Nombre completo</label>
+                        <input placeholder="Nombre(s)/ Apellidos" type="text" class="form-control" id="name" aria-describedby="emailHelp" title="Ingresa un nombre valido" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required name="nombre">
                 </div>
                 <div class="address w-100">
                     <label for="address" class="form-label">Domicilio</label>
@@ -62,10 +62,10 @@
                 </div>
                 <div class="school w-100">
                     <label for="school" class="form-label">Escuela de procedencia</label>
-                        <input type="text" class="form-control" id="school" name="es cuela" aria-describedby="emailHelp" title="Ingresa un nombre valido" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
+                        <input type="text" class="form-control" id="school" name="escuela" aria-describedby="emailHelp" title="Ingresa un nombre valido" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
                     
                         <label for="school" class="form-label">CURP</label>
-                        <input type="text" class="form-control" id="school" name="es cuela" aria-describedby="emailHelp" title="Ingresa un nombre valido" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
+                        <input type="text" class="form-control" id="curp" name="curp" aria-describedby="emailHelp" title="Ingresa una CURP válida" pattern="^[a-zA-Z0-9]+$" required>
                 </div>
 
                 <h3 class="fw-bold">Recibo de pago</h3>
@@ -79,7 +79,7 @@
                             <img class="upld " src="https://img.icons8.com/pastel-glyph/64/000000/upload--v1.png"/>
                         </i>Subir archivo
                       </label>
-                      <input id='input-file' type='file' />
+                      <input id='input-file' name="recibo" type='file' required />
                     </div>
                 </div>
                 
@@ -92,6 +92,7 @@
         </div>
     </div>
 
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="static/js/index.js" type="module"></script>
     <script src="./bootstrap-5.2.0-beta1-dist/js/bootstrap.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
